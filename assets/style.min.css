@@ -3,11 +3,11 @@ body {
     margin: auto;
 }
 * {
-    font-family: "Inter";
+    font-family: Inter;
     font-style: normal;
 }
 .top-header {
-    background-color: white;
+    background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -70,7 +70,7 @@ body {
     font-size: 30px;
 }
 .about-me__introduction {
-    font-family: "Spectral";
+    font-family: Spectral;
     font-weight: 800;
     font-style: italic;
     width: 60%;
@@ -112,8 +112,8 @@ body {
     object-fit: cover;
     padding: 0.5em;
 }
-.mg-prev,
-.mg-next {
+.mg-next,
+.mg-prev {
     width: 30px;
     height: 30px;
     border-radius: 00%;
@@ -122,9 +122,8 @@ body {
     display: flex;
     font-size: 24px;
 }
-
 .quote {
-    font-family: "Spectral";
+    font-family: Spectral;
     font-style: italic;
     width: 70%;
     margin: auto;
@@ -140,7 +139,6 @@ body {
     font-weight: 800;
     font-size: 22px;
 }
-
 #services {
     margin: auto;
     background-color: #a8d5d8;
@@ -156,14 +154,13 @@ body {
     left: 0;
     z-index: 0;
 }
-
 #services .container {
     justify-content: space-between;
     display: flex;
     padding: 2em 0;
 }
 .service {
-    background-color: white;
+    background-color: #fff;
     max-width: 390px;
     width: 30%;
     height: 337px;
@@ -271,7 +268,6 @@ input[type="submit"] {
     .service__description {
         margin-bottom: 1em;
     }
-
     #services .container::before {
         width: 30%;
         height: 100%;
@@ -295,7 +291,6 @@ input[type="submit"] {
         z-index: -1;
     }
 }
-
 @media all and (max-width: 650px) {
     .top-header {
         flex-direction: column;
@@ -304,7 +299,7 @@ input[type="submit"] {
     .top-header .nav,
     .top-header .nav ul {
         width: 100%;
-        padding: 0 0 0 0;
+        padding: 0;
     }
     .top-header .nav li {
         flex: 1;
