@@ -35,10 +35,10 @@
     align-items: center;
 }
 .carousel-inner {
-    width: 80%;
+    width: 100%;
 }
 .carousel-inner {
-    width: 80%;
+    width: 100%;
 }
 #about {
     display: flex;
@@ -114,9 +114,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 0.5em;
+    padding: 1em;
 }
-.mg-prev,
+.ga .mg-prev,
 .mg-next {
     width: 30px;
     height: 30px;
@@ -126,7 +126,6 @@
     display: flex;
     font-size: 24px;
 }
-
 .quote {
     font-family: "Spectral";
     font-style: italic;
