@@ -35,10 +35,10 @@
     align-items: center;
 }
 .carousel-inner {
-    width: 100%;
+    width: 80%;
 }
 .carousel-inner {
-    width: 90%;
+    width: 80%;
 }
 #about {
     display: flex;
