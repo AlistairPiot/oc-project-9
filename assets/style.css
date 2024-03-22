@@ -28,6 +28,9 @@
 .social-link img {
     width: 20px;
 }
+.carousel {
+    width: 100%;
+}
 #about {
     display: flex;
     background-color: #f6d2b8;
