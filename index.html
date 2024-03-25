@@ -30,8 +30,10 @@
 
 <body>
 	<header class="top-header">
-		<h1 class="name">Nina Carducci</h1>
-		<nav class="nav">
+		<div itemscope itemtype="https://schema.org/Person">
+			<h1 class="name" itemprop="name">Nina Carducci</h1>
+		</div>
+		<nav class="nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
 			<ul>
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
@@ -44,7 +46,8 @@
 	</header>
 	<div id="header">
 
-		<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" itemscope
+			itemtype="https://schema.org/ImageGallery">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
 					aria-current="true" aria-label="Slide 1"></button>
@@ -54,13 +57,14 @@
 					aria-label="Slide 3"></button>
 			</div>
 			<div class="carousel-inner">
-				<div class="carousel-item active">
+				<div class="carousel-item active" itemprop="associatedMedia" itemscope
+					itemtype="https://schema.org/ImageObject">
 					<img src="./assets/images/slider/ryoji-iwata-min.webp" class="d-block w-100" alt="image urbaine">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item" itemscope itemtype="https://schema.org/ImageObject">
 					<img src="./assets/images/slider/nicholas-green-min.webp" class="d-block w-100" alt="image foule">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item" itemscope itemtype="https://schema.org/ImageObject">
 					<img src="./assets/images/slider/edward-cisneros-min.webp" class="d-block w-100"
 						alt="image mariage">
 				</div>
@@ -77,7 +81,7 @@
 			</button>
 		</section>
 	</div>
-	<section id="about">
+	<section id="about" itemscope itemtype="https://schema.org/Person">
 		<div class="picture left">
 			<img src="./assets/images/nina-min.webp" alt="photo nina">
 		</div>
@@ -99,29 +103,32 @@
 		<div class="container py-3">
 			<div class="gallery">
 				<img data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery/concerts/aaron-paul-min.webp" alt="image aaron-paul" loading="lazy" />
+					src="./assets/images/gallery/concerts/aaron-paul-min.webp" alt="image aaron-paul" loading="lazy"
+					itemprop="image" />
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/ali-morshedlou-min.webp" alt="image ali-morshedlou"
-					loading="lazy" />
+					loading="lazy" itemprop="image" />
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/jason-goodman-min.webp" alt="image jason-goodman"
-					loading="lazy" />
+					loading="lazy" itemprop="image" />
 				<img data-gallery-tag="Mariages" class="gallery-item"
 					src="./assets/images/gallery/mariage/hannah-busing-min.webp" alt="image hannah-busing"
-					loading="lazy" />
+					loading="lazy" itemprop="image" />
 				<img data-gallery-tag="Portrait" class="gallery-item"
-					src="./assets/images/gallery/portraits/ade-tunji-min.webp" alt="image ade-tunji" loading="lazy" />
+					src="./assets/images/gallery/portraits/ade-tunji-min.webp" alt="image ade-tunji" loading="lazy"
+					itemprop="image" />
 				<img data-gallery-tag="Mariages" class="gallery-item"
-					src="./assets/images/gallery/mariage/jakob-owens-min.webp" alt="image jakob-owens" loading="lazy" />
+					src="./assets/images/gallery/mariage/jakob-owens-min.webp" alt="image jakob-owens" loading="lazy"
+					itemprop="image" />
 				<img data-gallery-tag="Portrait" class="gallery-item"
 					src="./assets/images/gallery/portraits/nino-van-prattenburg-min.webp"
-					alt="image nino-van-prattenburg" loading="lazy" />
+					alt="image nino-van-prattenburg" loading="lazy" itemprop="image" />
 				<img data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery/concerts/austin-neill-min.webp" alt="image austin-neill"
-					loading="lazy" />
+					src="./assets/images/gallery/concerts/austin-neill-min.webp" alt="image austin-neill" loading="lazy"
+					itemprop="image" />
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/mateus-campos-felipe-min.webp"
-					alt="image mateus-campos-felipe" loading="lazy" />
+					alt="image mateus-campos-felipe" loading="lazy" itemprop="image" />
 			</div>
 		</div>
 		<div class="quote">
@@ -139,37 +146,47 @@
 	<section id="services">
 		<h2 class="title">Mes services</h2>
 		<div class="container">
-			<div class="service">
+			<div class="service" itemscope itemtype="https://schema.org/Service">
 				<div class="service__description">
-					<h3>Shooting photo</h3>
-					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
+					<h3 itemprop="serviceType">Shooting photo</h3>
+					<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir
+						impérissable. Je me déplace en
 						Île-de-France pour réaliser vos photos</p>
 				</div>
-				<div class="service__price">
-					<h4>350€/demi journée</h4>
+				<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+					<h4 itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span
+							itemprop="price">350€</span> /
+						<span itemprop="unitCode" content="DAY">demi journée</span>
+					</h4>
 					<span>Matériel, déplacement inclus</span>
 				</div>
 
 			</div>
-			<div class="service">
+			<div class="service" itemscope itemtype="https://schema.org/Service">
 				<div class="service__description">
 					<h3>Retouches</h3>
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
 						optimal pour vos publications</p>
 				</div>
-				<div class="service__price">
-					<h4>50€/photo</h4>
+				<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+					<h4 itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span
+							itemprop="price">50€</span> /
+						<span itemprop="unitCode" content="DAY">photo</span>
+					</h4>
 					<span>2 AR par photo</span>
 				</div>
 			</div>
-			<div class="service">
+			<div class="service" itemscope itemtype="https://schema.org/Service">
 				<div class="service__description">
 					<h3>Album photos</h3>
 					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un
 						album photo personnalisé</p>
 				</div>
-				<div class="service__price">
-					<h4>400€ album A4</h4>
+				<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+					<h4 itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span
+							itemprop="price">400€</span> /
+						<span itemprop="unitCode" content="DAY">album A4</span>
+					</h4>
 					<span>30 pages recto/verso</span>
 				</div>
 			</div>
@@ -184,7 +201,7 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-	<section id="contact">
+	<section id="contact" itemscope itemtype="https://schema.org/Person">
 		<container class="container">
 			<div class="form-container">
 				<h3>Une question ? Une demande de devis ?</h3>
