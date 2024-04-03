@@ -112,9 +112,8 @@
 }
 .gallery-item {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 360px;
+  height: 360px;
   padding: 1em;
 }
 .ga .mg-prev,
