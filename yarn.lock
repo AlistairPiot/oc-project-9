@@ -8,16 +8,5 @@ __metadata:
 "ninacarducci.github.io-v2@workspace:.":
   version: 0.0.0-use.local
   resolution: "ninacarducci.github.io-v2@workspace:."
-  dependencies:
-    uglifycss: "npm:^0.0.29"
   languageName: unknown
   linkType: soft
-
-"uglifycss@npm:^0.0.29":
-  version: 0.0.29
-  resolution: "uglifycss@npm:0.0.29"
-  bin:
-    uglifycss: ./uglifycss
-  checksum: 10c0/28490383361906cc5a7776a0240fdd0714c059d311b3904dac43743fe7eb31c5698fbae54a6cd1156c1f7f3a35e452c9c81d8df692f0c0cd59daf556ac6fd78c
-  languageName: node
-  linkType: hard
