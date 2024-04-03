@@ -1,0 +1,8 @@
+{
+  "name": "ninacarducci.github.io-v2",
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  }
+}
