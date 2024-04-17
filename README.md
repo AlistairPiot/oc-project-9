@@ -3,5 +3,5 @@
 ## Commande Uglifycss pour minifier un fichier :
 
 ```bash
-uglifycss style.css > style.min.css
+uglifycss assets/style.css > assets/style.min.css
 ```
